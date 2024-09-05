@@ -6,10 +6,44 @@
     <title>Católica School</title>
     <link rel="stylesheet" href="/styles/tailwind.css">
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
 </head>
-<body>
-    <header class="mobil-320:bg-red-500">
-        
+<body class="bg-blanco-catolica">
+    <header class="h-screen flex flex-col">
+        <section class="flex items-center justify-between px-16 py-2">
+            <img class="w-64" src="/icons/logo.svg" alt="Logo Católica School">
+            <nav class="flex items-center gap-32 font-semibold">
+                <ul class="flex items-center gap-10">
+                    <a href="#"><li>Inicio</li></a>
+                    <a href="#"><li>Nosotros</li></a>
+                    <a href="#"><li>Infraestructura</li></a>
+                    <a href="#"><li>Perfil del Estudiantes</li></a>
+                    <a href="#"><li>Nuestros Aliados</li></a>
+                    <a href="#"><li>Propuesta Pedagógica</li></a>
+                    <a href="#"><li>Contáctanos</li></a>
+                </ul>
+                <ul class="flex items-center gap-2">
+                    <a class="bg-azul-catolica text-blanco-catolica font-bold px-7 py-1 rounded-lg border border-azul-catolica hover:bg-blanco-catolica hover:text-azul-catolica transition duration-300" href="#"><li>Admisión 2025</li></a>
+                    <a class="bg-verde-catolica text-blanco-catolica font-bold px-7 py-1 rounded-lg border border-verde-catolica hover:bg-blanco-catolica hover:text-verde-catolica transition duration-300" href="https://www.peruschool.edu.pe/LaCatolicaCarabayllo" target="_blank"><li>Intranet</li></a>
+                </ul>
+            </nav>
+        </section>
+        <section class="swiper w-full h-full">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-full relative">
+                    <img class="w-full h-full object-cover" src="/images/patios-amplios.jpg" alt="banner 1">
+                    <div class="w-full h-full bg-black opacity-70 absolute top-0 left-0"></div>
+                </div>
+                <div class="swiper-slide h-full relative">
+                    <img class="w-full h-full object-cover" src="/images/sala-smart.jpg" alt="banner 2">
+                    <div class="w-full h-full bg-black opacity-70 absolute top-0 left-0"></div>
+                </div>
+                <div class="swiper-slide h-full relative">
+                    <img class="w-full h-full object-cover" src="/images/teatro-musica.jpg" alt="banner 3">
+                    <div class="w-full h-full bg-black opacity-70 absolute top-0 left-0"></div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
@@ -17,5 +51,6 @@
     <footer>
 
     </footer>
+    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
